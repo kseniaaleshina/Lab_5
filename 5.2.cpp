@@ -48,6 +48,8 @@ int main() {
         for (j = 0; j < b_columns; j++)
         {
             product[i][j] = 0;
+            for (k = 0; k < a_columns; k++)
+                product[i][j] += a[i][k] * b[k][j];
         }
     }
 
