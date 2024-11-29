@@ -42,4 +42,12 @@ int main() {
         cout << endl;
     }
 
+    for (i = 0; i < a_rows; i++)
+    {
+        for (j = 0; j < b_columns; j++)
+        {
+            
+        }
+    }
+
 }
