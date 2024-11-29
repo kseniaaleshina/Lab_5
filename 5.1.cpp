@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+double min(double* numbers, int size);
+double max(double* numbers, int size);
+
 int main() {
     double numbers[7];
     int size = 7;
