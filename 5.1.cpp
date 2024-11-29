@@ -24,4 +24,5 @@ int main() {
             max = numbers[i];
 
     product = min * max;
+    cout << product << endl;
 }
