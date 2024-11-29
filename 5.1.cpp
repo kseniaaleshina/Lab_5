@@ -38,3 +38,17 @@ double min(double* numbers, int size)
     
     return min;
 }
+
+double max(double* numbers, int size)
+{
+    int i;
+    double max;
+
+    max = numbers[0];
+    
+    for(i = 0; i < size; i++)
+        if(max < numbers[i])
+            max = numbers[i];
+    
+    return max;
+}
