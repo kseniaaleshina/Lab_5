@@ -46,7 +46,7 @@ int main() {
     {
         for (j = 0; j < b_columns; j++)
         {
-            
+            product[i][j] = 0;
         }
     }
 
