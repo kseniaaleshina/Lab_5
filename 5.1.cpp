@@ -8,7 +8,7 @@ int main() {
     int i;
 
     int min = numbers[0];
-    int max;
+    int max = numbers[0];
 
     for(i = 0; i < size; i++)
         cin >> numbers[i];
