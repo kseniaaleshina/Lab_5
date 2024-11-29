@@ -23,5 +23,12 @@ int main() {
     
     for(i = 0; i < b_rows; i++)
         for(j = 0; j < b_columns; j++)
-            b[i][j] = rand() % 10; 
+            b[i][j] = rand() % 10;
+    
+    for (i = 0; i < a_rows; i++)
+    {
+        for (j = 0; j < a_columns; j++)
+            cout << a[i][j] << ' ';
+        cout << endl;
+    }
 }
