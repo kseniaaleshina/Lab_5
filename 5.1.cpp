@@ -16,4 +16,8 @@ int main() {
     for (i = 0; i < size; i++)
         if (numbers[i] < min)
             min = numbers[i];
+    
+    for(i = 0; i < size; i++)
+        if(max < numbers[i])
+            max = numbers[i];
 }
