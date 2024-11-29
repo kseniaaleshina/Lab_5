@@ -9,5 +9,7 @@ int main() {
     int a_rows = 2;
     int a_columns = 3;
     int b_rows = 3;
-    int b_columns = 4; 
+    int b_columns = 4;
+
+    srand(time(nullptr));
 }
