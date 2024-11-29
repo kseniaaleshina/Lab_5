@@ -52,5 +52,9 @@ int main() {
                 product[i][j] += a[i][k] * b[k][j];
         }
     }
-
+    for(i = 0; i < a_rows; i++) { 
+        for(j = 0; j < b_columns; j++)
+            cout << product[i][j] << ' ';
+        cout << endl;
+    }
 }
