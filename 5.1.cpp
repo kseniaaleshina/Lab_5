@@ -22,4 +22,6 @@ int main() {
     for(i = 0; i < size; i++)
         if(max < numbers[i])
             max = numbers[i];
+
+    product = min * max;
 }
