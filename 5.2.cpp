@@ -32,6 +32,8 @@ int main() {
         cout << endl;
     }
     
+    cout << "-----------------" << endl;
+
     for (i = 0; i < b_rows; i++)
     {
         for (j = 0; j < b_columns; j++)
