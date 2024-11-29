@@ -10,23 +10,18 @@ int main() {
     
     int i;
 
-    double min = numbers[0];
     double max = numbers[0];
 
     double product;
 
     for(i = 0; i < size; i++)
         cin >> numbers[i];
-
-    for (i = 0; i < size; i++)
-        if (numbers[i] < min)
-            min = numbers[i];
     
     for(i = 0; i < size; i++)
         if(max < numbers[i])
             max = numbers[i];
 
-    product = min * max;
+    product = min(numbers, size) * max;
     cout << product << endl;
 }
 
