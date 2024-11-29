@@ -7,6 +7,8 @@ int main() {
     
     int i;
 
+    int min;
+
     for(i = 0; i < size; i++)
         cin >> numbers[i];
 }
