@@ -10,6 +10,8 @@ int main() {
     double min = numbers[0];
     double max = numbers[0];
 
+    double product;
+
     for(i = 0; i < size; i++)
         cin >> numbers[i];
 
