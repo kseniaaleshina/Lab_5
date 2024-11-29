@@ -6,6 +6,7 @@ using namespace std;
 int main() {
     int a[2][3];
     int b[3][4];
+    int product[2][4];
 
     int a_rows = 2;
     int a_columns = 3;
@@ -40,4 +41,5 @@ int main() {
             cout << b[i][j] << ' ';
         cout << endl;
     }
+
 }
