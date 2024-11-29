@@ -12,5 +12,8 @@ int main() {
     int b_rows = 3;
     int b_columns = 4;
 
+    int i;
+    int j;
+
     srand(time(nullptr));
 }
