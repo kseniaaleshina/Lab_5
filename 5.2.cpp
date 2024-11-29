@@ -31,4 +31,11 @@ int main() {
             cout << a[i][j] << ' ';
         cout << endl;
     }
+    
+    for (i = 0; i < b_rows; i++)
+    {
+        for (j = 0; j < b_columns; j++)
+            cout << b[i][j] << ' ';
+        cout << endl;
+    }
 }
