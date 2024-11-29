@@ -16,4 +16,8 @@ int main() {
     int j;
 
     srand(time(nullptr));
+
+    for(i = 0; i < a_rows; i++)
+        for(j = 0; j < a_columns; j++)
+            a[i][j] = rand() % 10; 
 }
