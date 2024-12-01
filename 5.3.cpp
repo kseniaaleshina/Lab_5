@@ -37,8 +37,13 @@ int main() {
         for (j = 0; j < columns; j++)
             cout << matrix[i][j] << ' ';
     }
-    
+
     for(i = 0; i < rows; i++) { 
         array[i] = 1.0;
+        for(j = 0; j < columns; j++) { 
+            if(matrix[i][j] < 0)  { 
+                array[i] *= matrix[i][j];
+            }
+        }
     }
 }
