@@ -7,4 +7,6 @@ int main() {
     int matrix[4][5];
     int rows = 4;
     int columns = 5;
+
+    srand(time(nullptr));
 }
