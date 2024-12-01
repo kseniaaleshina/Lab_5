@@ -28,4 +28,10 @@ int main() {
         for(j = 0; j < columns; j++)
             if(matrix[i][j] > 0)
                 matrix[i][j] = log(matrix[i][j]);
+    
+    for (i = 0; i < rows; i++)
+    {
+        for (j = 0; j < columns; j++)
+            cout << matrix[i][j] << ' ';
+    }
 }
