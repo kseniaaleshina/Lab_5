@@ -8,6 +8,7 @@ int main() {
     int matrix[4][5];
     int rows = 4;
     int columns = 5;
+    double array[4];
 
     int i;
     int j;
@@ -23,7 +24,7 @@ int main() {
         for (j = 0; j < columns; j++)
             cout << matrix[i][j] << ' ';
     }
-    
+
     cout << "-----------------" << endl;
     
     for(i = 0; i < rows; i++)
