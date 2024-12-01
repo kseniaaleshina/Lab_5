@@ -49,4 +49,5 @@ int main() {
     
     for(i = 0; i < rows; i++)
         cout << array[i] << ' ';
+    cout << endl;
 }
