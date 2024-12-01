@@ -16,4 +16,8 @@ int main() {
     for (i = 0; i < rows; i++)
         for (j = 0; j < columns; j++)
             matrix[i][j] = rand() % 198 - 99;
+    
+    for (i = 0; i < rows; i++)
+        for (j = 0; j < columns; j++)
+            cout << matrix[i][j];
 }
