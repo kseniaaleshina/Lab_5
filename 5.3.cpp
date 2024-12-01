@@ -12,4 +12,8 @@ int main() {
     int j;
 
     srand(time(nullptr));
+
+    for (i = 0; i < rows; i++)
+        for (j = 0; j < columns; j++)
+            matrix[i][j] = rand();
 }
