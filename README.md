@@ -81,6 +81,7 @@ The program finds the product of the minimal and the maximal values, which could
 - No external dependencies.
 
 1.4.4 Communications Interfaces.
+
 No communication interfaces are required for this standalone application.
 
 ### 1.5. Nonfunctional Requirements
@@ -126,6 +127,7 @@ This document is intended for:
 - Readers should have basic knowledge of:
 
 2.1.4. Project Scope
+
 The project provides a simplified implementation of matrix multiplication. It initializes matrices with random integers, computes their product, and outputs the results. Future extensions could include:
 
 - Dynamic size input for matrices.
@@ -181,6 +183,7 @@ This program is standalone and does not depend on external systems. It operates 
 - Random number generation uses the standard library (rand() seeded with time(nullptr)).
 
 ### 2.3. System Features
+
 2.3.1 Functional Requirements
 
 - Generate two matrices of predefined sizes with random integers.
@@ -194,21 +197,27 @@ This program is standalone and does not depend on external systems. It operates 
 ### 2.4. External Interface Requirements
 
 2.4.1 User Interfaces
+
 The program uses a command-line interface (CLI). Users can run the program to view the generated matrices and their product.
 
 2.4.2 Hardware Interfaces
 
 - Standard keyboard for program execution.
+
 - Monitor to display program output.
 
 ### 2.5. Nonfunctional Requirements
+
 5.1 Performance Requirements
+
 The program completes matrix generation and multiplication in under 1 second for small matrices (e.g., 2x3, 3x4).
 
 5.2 Safety Requirements
+
 The program handles only compatible matrix sizes. Invalid sizes may lead to logical errors but do not crash the program.
 
 5.3 Security Requirements
+
 The program is standalone and does not involve data input from external sources, ensuring minimal security concerns.
 
 5.4 Software Quality Attributes
@@ -222,7 +231,9 @@ The program is standalone and does not involve data input from external sources,
 ## 3. Matrix Transformation Program
 
 ### 3.1. Introduction
+
 3.1.1 Purpose
+
 The purpose of this program is to demonstrate matrix operations on a 4x5 integer matrix. The program applies transformations to the matrix:
 
 - Replacing positive elements with their natural logarithms.
@@ -240,6 +251,7 @@ The purpose of this program is to demonstrate matrix operations on a 4x5 integer
 - Transformation rules: Positive numbers are replaced by their natural logarithms, and the product of negative numbers is computed per row.
 
 3.1.3 Intended Audience and Reading Suggestions
+
 This document is intended for:
 
 - Students learning about nested loops and array manipulations.
@@ -249,7 +261,10 @@ This document is intended for:
 - Programmers seeking practical examples of matrix transformations.
 
 3.1.4 Project Scope
-This program generates a random 4x5 integer matrix, applies specific transformations to the matrix elements, and computes row-wise aggregates. Future enhancements might include:
+
+This program generates a random 4x5 integer matrix, applies specific transformations to the matrix elements, and computes row-wise aggregates. 
+
+Future enhancements might include:
 
 - Allowing dynamic matrix dimensions.
 
@@ -264,7 +279,9 @@ This program generates a random 4x5 integer matrix, applies specific transformat
 - "Numerical Recipes in C++" for logarithm and matrix-related algorithms.
 
 ### 3.2. Overall Description
+
 3.2.1 Product Perspective
+
 This program is standalone and console-based. It generates a matrix with random integer values, processes the matrix according to predefined rules, and outputs the results. It is designed as a simple educational tool for understanding matrix transformations.
 
 3.2.2 Product Features
@@ -296,13 +313,17 @@ This program is standalone and console-based. It generates a matrix with random 
 3.2.5 Design and Implementation Constraints
 
 - Fixed matrix size of 4x5.
+
 - Random values are integers between -99 and 98.
+
 - Logarithm calculations are limited to positive integers only.
 
 3.2.6 Assumptions and Dependencies
 
 - Matrix dimensions are predefined (4x5).
+
 - The program uses standard library functions for random number generation (rand()) and logarithmic calculations (log()).
+
 - Negative and zero values remain unchanged during logarithmic transformation.
 
 ### 3.3 System Features
@@ -314,6 +335,7 @@ This program is standalone and console-based. It generates a matrix with random 
 - Replace positive elements with their natural logarithms using log().
 
 - Compute the product of negative numbers for each row and store the results in a separate array.
+
 Display:
 
 - The original matrix.
@@ -325,6 +347,7 @@ Display:
 ### 3.4. External Interface Requirements
 
 3.4.1 User Interfaces
+
 Command-line interface (CLI) for displaying results.
 
 3.4.2 Hardware Interfaces
@@ -334,7 +357,9 @@ Command-line interface (CLI) for displaying results.
 - Monitor to display the matrix and results.
 
 3.4.3 Software Interfaces
+
 C++ Standard Library:
+
 - iostream for input/output.
 
 - cstdlib and ctime for random number generation.
@@ -342,6 +367,7 @@ C++ Standard Library:
 - cmath for logarithmic transformations.
 
 ### 3.5. Nonfunctional Requirements
+
 3.5.1 Performance Requirements
 
 The program should process the 4x5 matrix in under 1 second on modern hardware.
